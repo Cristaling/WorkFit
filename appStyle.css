@@ -1,0 +1,42 @@
+body {
+    min-height: 100%;
+    height: auto;
+    background-image: url("https://static.pexels.com/photos/10651/photo-1432821596592-e2c18b78144f.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 1.0em;
+}
+
+.btn-workLand{
+    color: white;
+    background-color: rgba(133, 97, 62, 0.8);
+    border-color: rgba(113, 73, 33, 0.8);
+    text-align: center;
+}
+
+.btn-work{
+    color: white;
+    background-color: rgba(133, 97, 62, 0.8);
+    border-color: rgba(113, 73, 33, 0.8);
+    text-align: center;
+}
+
+md-checkbox.md-default-theme.md-checked .md-ink-ripple, md-checkbox.md-checked .md-ink-ripple {
+    color: #ba6c23;
+}
+
+md-checkbox.md-default-theme.md-checked .md-icon, md-checkbox.md-checked .md-icon {
+    background-color: #ba6c23;
+}
+
+.panel-work{
+    border-color: rgba(113, 73, 33, 1.0);
+}
+
+.panel-work .panel-heading{
+    color: white;
+    background-color: rgba(133, 97, 62, 1.0);
+    border-color: rgba(113, 73, 33, 1.0);
+    font-size: 1.5em;
+}
