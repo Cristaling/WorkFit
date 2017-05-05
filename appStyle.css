@@ -5,7 +5,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-size: 1.0em;
+    font-size: 1.5em;
 }
 
 .btn-workLand{
@@ -22,12 +22,16 @@ body {
     text-align: center;
 }
 
-md-checkbox.md-default-theme.md-checked .md-ink-ripple, md-checkbox.md-checked .md-ink-ripple {
-    color: #ba6c23;
+md-select-menu.md-default-theme md-content md-option[selected]:focus, md-select-menu md-content md-option[selected]:focus {
+    color: rgba(133, 97, 62, 1.0);
 }
 
-md-checkbox.md-default-theme.md-checked .md-icon, md-checkbox.md-checked .md-icon {
-    background-color: #ba6c23;
+md-select-menu.md-default-theme md-content md-option[selected], md-select-menu md-content md-option[selected] {
+    color: rgba(133, 97, 62, 1.0);
+}
+
+.md-checkbox-enabled.md-default-theme[selected] .md-icon, .md-checkbox-enabled[selected] .md-icon {
+    background-color: rgba(133, 97, 62, 0.87);
 }
 
 .panel-work{

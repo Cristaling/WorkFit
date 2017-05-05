@@ -1,0 +1,19 @@
+<div style="position: absolute; left: 50%; top: 40%">
+    <div style="position: relative; left: -50%; width: 50vw">
+        <div class="col-md-12">
+            
+            <md-content>
+                <md-list flex>
+                    <md-list-item class="md-3-line" ng-repeat="job in ctrl.jobs | orderBy: '-score' | limitTo: 3" ng-click="ctrl.clickJob(job)">
+                        <div class="md-list-item-text" layout="column">
+                            <h3>{{ job.name }} ({{job.company}})</h3>
+                            <h4>Fitting skills: {{ job.score }}</h4>
+                            <p>{{ job.description | limitTo:50 }}...</p>
+                        </div>
+                    </md-list-item>
+                </md-list>
+            </md-content>
+
+        </div>
+    </div>
+</div>

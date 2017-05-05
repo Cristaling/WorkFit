@@ -5,7 +5,7 @@
 	{
 		var vm = this;
 		
-        vm.entry = {};
+        vm.entry = {skills: []};
         vm.skills = skillFactory;
 
         vm.addJob = addJob;

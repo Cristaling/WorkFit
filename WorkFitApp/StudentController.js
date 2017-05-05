@@ -7,19 +7,19 @@
 		
         vm.skills = skillFactory;
         vm.jobs = [];
+		vm.selectedSkills = [];
 
 		var cookie = $cookies.getAll();
+		
 		if('JobOffers' in cookie){
 			vm.jobs = $cookies.getObject('JobOffers');
 		}
 
-		vm.removeJob = removeJob;
-
-		function removeJob(job){
-			vm.jobs = vm.jobs.filter(function(el) {
-				return el !== job;
-			});
-			$cookies.putObject('JobOffers', vm.jobs);
+		vm.getToListPage = getToListPage;
+        
+        function getToListPage(){
+			$cookies.putObject('MySkills', vm.selectedSkills);
+			$location.path('/list');
 		}
 
 	}]);

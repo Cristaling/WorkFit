@@ -1,5 +1,5 @@
-<div style="position: absolute; left: 50%; top: 35%">
-    <div style="position: relative; left: -50%; width: 50vw">
+<div style="position: absolute; left: 50%; top: 35%; height: auto">
+    <div style="position: relative; left: -50%; width: 50vw; height: auto">
         <div class="col-md-12">
             <div class="panel panel-work">
                 <div class="panel-heading">
@@ -32,16 +32,22 @@
                                 </md-select>
                             </md-input-container>
                         </div>
+                        <div class="col-md-12">
+                            <md-input-container class="md-block">
+                                <label>Redirect</label>
+                                <input ng-model="ctrl.entry.redirect"></input>
+                            </md-input-container>
+                        </div>
                     </div>
                     <div class="col-md-8">
                         <div class="col-md-12">
                             <md-input-container class="md-block">
                                 <label>Job Description</label>
-                                <textarea ng-model="ctrl.entry.description" md-maxlength="300" rows="5" md-select-on-focus></textarea>
+                                <textarea ng-model="ctrl.entry.description" md-maxlength="3000" rows="8" md-select-on-focus></textarea>
                             </md-input-container>
                         </div>
                         <div class="col-md-6 col-md-offset-3 btn btn-lg btn-work" ng-click='ctrl.addJob()'>
-					        Adauga
+					        Add
 				        </div>
                     </div>
                 </div>

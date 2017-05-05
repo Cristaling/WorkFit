@@ -18,8 +18,18 @@
                     controller: 'StudentController',
                     controllerAs: 'ctrl'
                 })
+                .when("/list", {
+                    templateUrl: "WorkFitApp/ListPage.html",
+                    controller: 'ListController',
+                    controllerAs: 'ctrl'
+                })
 		        .otherwise({ redirectTo: "/landing" });
 	});
+    app.config(function($mdThemingProvider) {
+        $mdThemingProvider.theme('default')
+            .primaryPalette('deep-orange')
+            .accentPalette('orange');
+    });
     app.factory('skillFactory', function() {
         var skills = [
             {
